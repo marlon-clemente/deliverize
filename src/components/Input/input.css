@@ -1,0 +1,20 @@
+.inputComponent{
+  width: 100%;
+  max-width: 22.125rem;
+  height: 3rem;
+  border: 1px solid var(--text-color-red);
+  background: var(--background-color-primary);
+  border-radius: 4px;
+}
+.inputComponent input{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 319px;
+  height: 100%;
+  border: none;
+  line-height: 10px;
+  color: var(--text-color-gray);
+}
+.inputComponent input:focus{
+  outline: none;
+}

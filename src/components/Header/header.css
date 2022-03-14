@@ -1,0 +1,42 @@
+/*header*/
+.h {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background: var(--background-color-secondary);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  height: 5rem;
+}
+.h-container {
+  display: flex;
+  width: 100%;
+  margin: 0 2.5rem;
+
+  justify-content: space-between;
+  align-items: center;
+  
+  /* background-color:; */
+}
+.h-container-logoContainer {
+  height: 3rem;
+}
+
+.h-container-bar{
+  display: flex;
+  gap: 24px;
+}
+.h-container-bar-aContainer{
+  display: flex;
+  align-items: center;
+}
+.h-container-bar-aContainer:hover{
+  cursor: pointer;
+}
+.h-container-bar-aContainer strong{
+  font: 400 16px Roboto;
+  color: var(--text-color-red);
+  margin-left: 8px;
+}
