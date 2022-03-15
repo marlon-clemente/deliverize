@@ -11,8 +11,6 @@ function App() {
   const fetch = async () => {
     const { data } = await api.get("/test-frontend/products");
     setProduct(data[0]);
-
-    console.log(product);
   };
 
   useEffect(() => {

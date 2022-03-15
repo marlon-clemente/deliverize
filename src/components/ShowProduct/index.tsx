@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeProduct } from "../../types";
-// import ListProductItems from "../ListProductItems";
+import ListProductItems from "../ListProductItems";
 
 import "./showProduct.css";
 
@@ -9,7 +9,6 @@ type TypeShowProduct = {
 };
 
 const ShowProduct: React.FC<TypeShowProduct> = ({ product }) => {
-  console.table(product);
   return (
     <div className="c-show-prod">
       <div className="c-show-prod__prod-description">
@@ -35,7 +34,9 @@ const ShowProduct: React.FC<TypeShowProduct> = ({ product }) => {
           </strong>
         </div>
       </div>
-      {/* <ListProductItems itens={product.ingredients} /> */}
+      <div className="c-show-prod__prices">
+        <ListProductItems itens={product.ingredients} />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,58 @@
+.bt-g, .bt-g--small {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border: 1px solid var(--button-color);
+  border-radius: 4px;
+}
+.bt-g--small {
+  width: 89px;
+  height: 32px;
+}
+.bt-g {
+  width: 140px;
+  height: 40px;
+}
+
+
+.bt-g__value{
+  font: 500 14px Roboto;
+  color: var(--color-gray-darker);
+}
+.bt-g__value--small{
+  font: 400 14px Roboto;
+  color: var(--color-gray-darker);
+}
+
+
+.bt-g__sides {
+  width: 140px;
+  height: 40px;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  background: none;
+  border: none;
+}
+.bt-g__sides:hover {
+  cursor: pointer;
+}
+.bt-g__sides--disable {
+  width: 140px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: none;
+  border: none;
+  filter: grayscale();
+}
+.bt-g__sides--disable {
+  cursor: pointer;
+}

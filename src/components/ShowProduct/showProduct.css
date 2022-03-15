@@ -1,22 +1,29 @@
 .c-show-prod{
   display: flex;
-  /* justify-content: center; */
+  height: calc(100vh - 5rem);
+  justify-content: center;
   padding: 24px 0;
+  
+  gap: 10px;
+}
+.c-show-prod__prod-description,
+.c-show-prod__prices {
+  margin: 0 5.15%;
 }
 .c-show-prod__prod-description{
   display: flex;
   flex-direction: column;
 
-  height: 41.375rem;
+  height: 100%;
   width: 37.3rem;
   
-  margin: 0 4.12rem;
   padding: 24px 0;
 
   justify-content: space-between;
   align-items: flex-start;
 }
 .c-show-prod__prod-description__img{
+  max-width: 597px;
   width: 100%;
 }
 .c-show-prod__prod-description__nm-product,
@@ -42,4 +49,8 @@
 .c-show-prod__prod-description__c-price__price--discount{
   font: 400 2rem Roboto;
   color: var(--text-color-orange-price);
+}
+.c-show-prod__prices{
+  max-width: 439px;
+  width: 100%;
 }

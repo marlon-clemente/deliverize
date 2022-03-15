@@ -1,6 +1,13 @@
+export type TypeItemsIngredients = {
+  id: Number;
+  nm_item: string;
+  vl_item: Number;
+};
+
 export type TypeIngredients = {
   group: string;
   max_itens: Number;
+  itens: Array<TypeItemsIngredients>;
   type: string;
 };
 
