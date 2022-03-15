@@ -1,11 +1,29 @@
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
+import ShowProduct from "./components/ShowProduct";
+import api from "./services/api";
 import "./styles/global.css";
+import { TypeProduct } from "./types";
 
 function App() {
+  const [product, setProduct] = useState<TypeProduct>();
+
+  const fetch = async () => {
+    const { data } = await api.get("/test-frontend/products");
+    setProduct(data[0]);
+
+    console.log(product);
+  };
+
+  useEffect(() => {
+    fetch();
+  }, []);
+
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      {product && <ShowProduct product={product} />}
+    </>
   );
 }
 
