@@ -14,11 +14,13 @@ const ShowProduct: React.FC<TypeShowProduct> = ({ product }) => {
       <div className="c-show-prod__prod-description">
         {/*!! A imagem da API está off
         <img src={product.url_image} alt="" />*/}
-        <img
-          className="c-show-prod__prod-description__img"
-          src="product-img.png"
-          alt=""
-        />
+        <div className="c-show-prod__prod-description__c-img">
+          <img
+            className="c-show-prod__prod-description__img"
+            src="product-img.png"
+            alt=""
+          />
+        </div>
         <h1 className="c-show-prod__prod-description__nm-product">
           {product.nm_product}
         </h1>
