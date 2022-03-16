@@ -15,17 +15,16 @@
   --text-color-orange-price: #DC6E05;
   
   --text-color-red-deliverize: #D80000;
-  --text-color-red: #ED3237;
   
   --button-color: #F09035;
 
   /* rfactor */
   
+  --color-primary-default: #ED3237;
   --color-secondary-default: #F09035;
   --color-secondary-lighter: #E8A634;
   --color-yellow-dark: #E49700;
   --color-gray-darker: #4E4E4E;
-
 }
 
 body, input, button {

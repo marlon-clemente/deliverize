@@ -1,20 +1,22 @@
-.inputComponent{
+.c-input{
+  display: flex;
+  align-items: center;
+
   width: 100%;
-  max-width: 22.125rem;
+  min-width: 290px;
+
   height: 3rem;
-  border: 1px solid var(--text-color-red);
+  border: 1px solid var(--color-primary-default);
   background: var(--background-color-primary);
   border-radius: 4px;
 }
-.inputComponent input{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 319px;
-  height: 100%;
+.c-input__input {
+  margin: 0 1rem ;
+  width: 100%;
   border: none;
   line-height: 10px;
-  color: var(--text-color-gray);
+  color: var(--color-gray-darker);
 }
-.inputComponent input:focus{
+.c-input__input:focus{
   outline: none;
 }

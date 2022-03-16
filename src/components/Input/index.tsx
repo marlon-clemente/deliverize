@@ -7,8 +7,8 @@ interface TypeInput extends InputHTMLAttributes<HTMLInputElement> {
 
 const Input: React.FC<TypeInput> = (props) => {
   return (
-    <div className="inputComponent">
-      <input {...props} />
+    <div className="c-input">
+      <input className="c-input__input" {...props} />
       <i />
     </div>
   );
