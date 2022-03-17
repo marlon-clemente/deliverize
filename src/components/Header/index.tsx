@@ -35,6 +35,7 @@ const Header: React.FC = () => {
           </div>
           <div className="h__container-bar__a-container" onClick={handleCart}>
             <img src="icons/shopping_cart.svg" alt="" />
+            <div className="h__container-bar__a-container__badge">1</div>
             <strong>Carrinho</strong>
           </div>
         </div>
