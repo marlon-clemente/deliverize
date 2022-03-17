@@ -8,5 +8,5 @@ Para a execução do projeto é necessário a existência do endpoint fornecido 
 
 ### Executar o projeto
 Clone o repostório, e execute:
-###`yarn install`
-###`yarn start`
+### `yarn install`
+### `yarn start`
