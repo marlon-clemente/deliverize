@@ -1,12 +1,12 @@
 import "./header.css";
-//@ts-ignore
 import Input from "../Input";
 import Dropdown from "../Dropdown";
-
-const handleLogIn = () => console.log("Login");
-const handleCart = () => console.log("Cart");
+import Popover from "../Popover";
 
 const Header: React.FC = () => {
+  const handleLogIn = () => console.log("Login");
+  const handleCart = () => console.log("Cart");
+
   return (
     <div className="h">
       <div className="h__arrow_down">
@@ -33,9 +33,18 @@ const Header: React.FC = () => {
             <img src="icons/account_circle.svg" alt="" />
             <strong>Entrar</strong>
           </div>
+
           <div className="h__container-bar__a-container" onClick={handleCart}>
-            <img src="icons/shopping_cart.svg" alt="" />
-            <div className="h__container-bar__a-container__badge">1</div>
+            {/* div para dar suporte ao Badge e Poppover */}
+            <div className="h__container-bar__a-container__cart">
+              <img src="icons/shopping_cart.svg" alt="" />
+              <div className="h__container-bar__a-container__cart__badge">
+                1
+              </div>
+              <div className="h__container-bar__a-container__cart__popover">
+                <Popover />
+              </div>
+            </div>
             <strong>Carrinho</strong>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { usePopoverCard } from "../../hooks/usePopoverCard";
 import { TypeIngredients } from "../../types";
 import BoxInputRadio from "../BoxInputRadio";
 import Button from "../Button";
@@ -12,7 +13,22 @@ type TypeListProductItems = {
 };
 
 const ListProductItems: React.FC<TypeListProductItems> = ({ itens }) => {
+  const { showPopover } = usePopoverCard();
+
   const [valueBoxInputRadio, setValueBoxInputRadio] = useState<boolean>(false);
+  console.log(valueBoxInputRadio);
+
+  /*
+    \\@-Bookmarks Lembrar...Testar quando a api voltar
+  */
+  const handleActivePopover = () => {
+    showPopover("Oferta Cheddar Bacon", [
+      "1 Carne 250gr",
+      "2 Queijo Cheddar",
+      "1 Bacon",
+      "Molho Especial",
+    ]);
+  };
 
   return (
     <div className="c-list-prod">
@@ -43,7 +59,7 @@ const ListProductItems: React.FC<TypeListProductItems> = ({ itens }) => {
       </div>
       <div className="c-list-prod__footer">
         <ButtonGroup />
-        <Button>Adicionar</Button>
+        <Button onClick={handleActivePopover}>Adicionar</Button>
       </div>
     </div>
   );
