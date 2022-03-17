@@ -45,3 +45,16 @@
   line-height: 20px;
   color: var(--color-yellow-dark);
 }
+
+@media (max-width: 720px) {
+  .c-list-prod{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    scrollbar-width: 25px;
+    border: none;
+    padding: 0;
+  }
+}

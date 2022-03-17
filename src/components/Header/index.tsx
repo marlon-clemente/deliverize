@@ -9,9 +9,12 @@ const handleCart = () => console.log("Cart");
 const Header: React.FC = () => {
   return (
     <div className="h">
+      <div className="h__arrow_down">
+        <img src="icons/arrow_left_24px.svg" alt="" />
+      </div>
       <div className="h__container">
         <div className="h__logo-container">
-          <img src="Logo.png" alt="" />
+          <img className="h__logo-container__img" src="Logo.png" alt="Logo" />
         </div>
 
         <div className="h__container-bar">
